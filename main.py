@@ -31,16 +31,7 @@ def geodesic_point_buffer(lon, lat, radius_m):
     ).transform
 
     return transform(Trans, Point(0, 0).buffer(radius_m))
-    R = 6378137   # Earth radius in kilometers
-
-    dlat = math.radians(x2 - x1)
-    dlon = math.radians(y2 - y1)
-
-    a = math.sin(dlat / 2)**2 + math.cos(math.radians(x1)) * math.cos(math.radians(x2)) * math.sin(dlon / 2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-
-    distance = R * c
-    return distance
+    
 
 def calculate_midpoint(point1, point2):
     return [(point1[0] + point2[0]) / 2, (point1[1] + point2[1]) / 2]
