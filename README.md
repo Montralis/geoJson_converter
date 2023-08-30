@@ -2,6 +2,14 @@
 
 The Circle Insertion Tool is a Python program that allows you to insert circles between specified points in polygonal geometries stored in a GeoJSON file.
 
+Before:
+![Example Image](img/before.PNG)
+
+
+After:
+![Example Image](img/after.PNG)
+
+
 ## Installation
 
 1. **Clone the repository:**
