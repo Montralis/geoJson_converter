@@ -1,14 +1,14 @@
 [
     {
-        "polygonnumber": 1,
+        "polygonNumber": 1,
         "insertBetween":  [[0,1], [2, 3]]
     },
     {
-        "polygonnumber": 2,
+        "polygonNumber": 2,
         "insertBetween": [[0,1], [2, 3]]
     },
     {
-        "polygonnumber": 3,
+        "polygonNumber": 3,
         "insertBetween": [[0,1], [1, 2]]
     }
 ]
