@@ -1,6 +1,10 @@
-# Circle Insertion Tool
+# Geojson Helper Tool
 
-The Circle Insertion Tool is a Python program that allows you to insert circles between specified points in polygonal geometries stored in a GeoJSON file.
+The Geojson Tool is a Python program that allows you to do differnt operations to polygonal geometries stored in a GeoJSON file.
+
+One is to insert Circles between points.
+
+Other is to merge multipolygon to one large. 
 
 Before:
 ![Example Image](img/before.PNG)
@@ -25,15 +29,15 @@ After:
     pip install -r requirements.txt
     ```
 
-## Usage
+## Usage Circle
 
 1. **Prepare your GeoJSON data:**
 
-   Make sure you have a GeoJSON file named `data.geojson` containing polygons. Each polygon should be represented as a list of coordinates.
+   Make sure you have a GeoJSON file named `/circle/data.geojson` containing polygons. Each polygon should be represented as a list of coordinates.
 
 2. **Create a configuration file:**
 
-   Create a `config.json` file where you specify which polygons you want to modify and between which points you want to insert circles. The format of the configuration should be as follows:
+   Create a `/circle/config.json` file where you specify which polygons you want to modify and between which points you want to insert circles. The format of the configuration should be as follows:
 
    ```json
    [
@@ -48,9 +52,20 @@ After:
    ]
 
 ## Run the program:
-    python main.py
+    python /circle/main.py
     
 The program will read the data.geojson file, apply the circle insertion based on the configuration in config.json, and create a new GeoJSON file named with_circle.geojson.
+
+## Usage Merge Polygones
+
+1. **Prepare your GeoJSON data:**
+
+   Make sure you have a GeoJSON file named `/merge/data.geojson` containing polygons. Each polygon should be represented as a list of coordinates.
+
+## Run the program:
+    python /merge/main.py
+    
+The program will read the data.geojson file, apply the merge the polyones to one big polygon and create a new GeoJSON file named merged_polygon.geojson.
 
 ## Contributing:
 Contributions are welcome! If you find any issues or want to improve the program, feel free to submit a pull request or open an issue.
